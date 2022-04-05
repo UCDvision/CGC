@@ -1,3 +1,3 @@
-## Consistent Explanation by Contrastive Learning
+## Consistent Explanations by Contrastive Learning
 
 
