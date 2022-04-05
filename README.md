@@ -1,12 +1,23 @@
 # Consistent-Explanations-by-Contrastive-Learning
-PyTorch code for 'Consistent Explanations by Contrastive Learning'
+Official PyTorch code for CVPR 2022 paper - [Consistent Explanations by Contrastive Learning][1]
 
 
-Understanding and explaining the decisions of neural networks are critical to building trust, rather than relying on them as black box algorithms. Post-hoc evaluation techniques, such as Grad-CAM, enable humans to inspect the spatial regions responsible for a particular network decision. However, it is shown that such explanations are not always consistent with human priors, such as consistency across image transformations. Given an interpretation algorithm, e.g., Grad-CAM, we introduce a novel training method to train the model to produce more consistent explanations. Since obtaining the ground truth for a desired model interpretation is not a well-defined task, we adopt ideas from contrastive self-supervised learning and apply them to the interpretations of the model rather than its embeddings. Explicitly training the network to produce more reasonable interpretations and subsequently evaluating those interpretations will enhance our ability to trust the network. We show that our method, Contrastive Grad-CAM Consistency (CGC), results in Grad-CAM interpretation heatmaps that are consistent with human annotations while still achieving comparable classification accuracy. Moreover, since our method can be seen as a form of regularizer, on limited-data fine-grained classification settings, our method outperforms the baseline classification accuracy on Caltech-Birds, Stanford Cars, VGG Flowers, and FGVC-Aircraft datasets. In addition, because our method does not rely on annotations, it allows for the incorporation of unlabeled data into training, which enables better generalization of the model.
+Post-hoc explanation methods, e.g., Grad-CAM, enable humans to inspect the spatial regions responsible for a particular network decision. However, it is shown that such explanations are not always consistent with human priors, such as consistency across image transformations. Given an interpretation algorithm, e.g., Grad-CAM, we introduce a novel training method to train the model to produce more consistent explanations. Since obtaining the ground truth for a desired model interpretation is not a well-defined task, we adopt ideas from contrastive self-supervised learning, and apply them to the interpretations of the model rather than its embeddings. We show that our method, Contrastive Grad-CAM Consistency (CGC), results in Grad-CAM interpretation heatmaps that are more consistent with human annotations while still achieving comparable classification accuracy. Moreover, our method acts as a regularizer and improves the accuracy on limited-data, fine-grained classification settings. In addition, because our method does not rely on annotations, it allows for the incorporation of unlabeled data into training, which enables better generalization of the model.
 
 ![Teaser image][teaser]
 
 <br/>
+
+## Bibtex
+```
+@InProceedings{Pillai_2022_CVPR,
+author = {Pillai, Vipin and Abbasi Koohpayegani, Soroush and Ouligian, Ashley and Fong, Dennis and Pirsiavash, Hamed},
+title = {Consistent Explanations by Contrastive Learning},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2022}
+}
+```
 
 ## Pre-requisites
 - Pytorch 1.3 - Please install [PyTorch](https://pytorch.org/get-started/locally/) and CUDA if you don't have it installed. 
@@ -78,4 +89,5 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_auc_metrics.py --ckpt-path <PATH_TO_SAVED
 ## License
 This project is licensed under the MIT License.
 
+[1]: https://arxiv.org/pdf/2110.00527.pdf
 [teaser]: https://github.com/UMBCvision/Consistent-Explanations-by-Contrastive-Learning/blob/main/misc/teaser_image.png
