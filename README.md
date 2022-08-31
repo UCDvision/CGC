@@ -22,6 +22,13 @@ year = {2022}
 ## Pre-requisites
 - Pytorch 1.3 - Please install [PyTorch](https://pytorch.org/get-started/locally/) and CUDA if you don't have it installed. 
 
+## Datasets
+ - [ImageNet - 1K](https://www.image-net.org/download.php)
+ - [CUB-200](https://vision.cornell.edu/se3/caltech-ucsd-birds-200/)
+ - [FGVC-Aircraft](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/)
+ - [Stanford Cars-196](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+ - [VGG Flowers-102](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/)
+
 ## Training
 
 #### Train and evaluate a ResNet50 model on the ImageNet dataset using our CGC loss
