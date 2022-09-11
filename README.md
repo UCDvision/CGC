@@ -46,6 +46,9 @@ CUDA_VISIBLE_DEVICES=0,1 python train_imagenet_1pc_swav_cgc_unlabeled.py <PATH_T
 
 <br/>
 
+## Checkpoints
+* ResNet50 model pre-trained on ImageNet - [link](https://drive.google.com/drive/folders/1n7lFew0CdWuYCpR1kImMt7UC7_vsO5CT?usp=sharing)
+
 ## Evaluation
 
 #### Evaluate model checkpoint using Content Heatmap (CH) evaluation metric
